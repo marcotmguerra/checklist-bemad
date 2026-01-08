@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Admin | Check List - BEMAD</title>
+
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/admin.css" />
+</head>
+<body>
+
+  <!-- HEADER ADMIN -->
+  <header class="admin-header">
+    <h1>Check List - BEMAD</h1>
+
+    <nav class="admin-nav">
+      <button data-section="viaturas" class="active">Viaturas</button>
+      <button data-section="materiais">Materiais</button>
+      <button data-section="conferencias">Conferências</button>
+      <button data-section="usuarios">Usuários</button>
+    </nav>
+
+    <button class="btn-logout">Sair</button>
+  </header>
+
+  <!-- CONTEÚDO -->
+  <main class="admin-content">
+
+    <section id="viaturas" class="admin-section active">
+      <h2>Cadastro de Viaturas</h2>
+
+      <form class="admin-form">
+        <input type="text" placeholder="Nome / Prefixo" />
+        <input type="text" placeholder="Tipo da Viatura" />
+        <button class="btn-primary">Salvar</button>
+      </form>
+
+      <div class="admin-list"></div>
+    </section>
+
+    <section id="materiais" class="admin-section">
+      <h2>Cadastro de Materiais</h2>
+
+      <form class="admin-form">
+        <select></select>
+        <input type="text" placeholder="Nome do material" />
+        <input type="number" placeholder="Quantidade" />
+        <input type="text" placeholder="Compartimento" />
+        <button class="btn-primary">Adicionar</button>
+      </form>
+
+      <div class="admin-list"></div>
+    </section>
+
+    <section id="conferencias" class="admin-section">
+      <h2>Conferências Recebidas</h2>
+      <div class="admin-list"></div>
+    </section>
+
+    <section id="usuarios" class="admin-section">
+      <h2>Usuários Pendentes</h2>
+      <div class="admin-list"></div>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="assets/js/auth/authGuard.js" defer></script>
+  <script src="assets/js/admin/admin-nav.js" defer></script>
+  <script src="assets/js/admin/viaturas.js" defer></script>
+  <script src="assets/js/admin/materiais.js" defer></script>
+  <script src="assets/js/admin/conferencias.js" defer></script>
+  <script src="assets/js/admin/usuarios.js" defer></script>
+
+</body>
+</html>

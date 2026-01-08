@@ -1,0 +1,86 @@
+/* CONTAINER GERAL */
+.conferencia-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* BLOCO CENTRAL (limite de largura) */
+.conferencia-container > section,
+.conferencia-container > .finalizacao {
+  width: 100%;
+  max-width: 520px; /* 🔑 largura ideal p/ mobile + tablet */
+}
+
+/* INFO VIATURA */
+.viatura-info {
+  background: #fff;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+/* COMPARTIMENTO */
+.compartimento {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* MATERIAL */
+.material-item {
+  background: #fff;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+  border-left: 5px solid var(--cor-primaria);
+}
+
+/* TÍTULO MATERIAL */
+.material-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+/* QUANTIDADE */
+.material-quantidade {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 15px;
+}
+
+/* STATUS */
+.material-status {
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.material-status label {
+  margin-right: 20px;
+}
+
+/* OBSERVAÇÃO */
+.material-observacao textarea {
+  width: 100%;
+  min-height: 70px;
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 6px;
+  border: 1px solid var(--cor-borda);
+}
+
+/* FINALIZAÇÃO */
+.finalizacao {
+  margin: 25px 0;
+  text-align: center;
+}
+
+.finalizacao button {
+  width: 100%;
+  max-width: 520px;
+  font-size: 16px;
+  padding: 14px;
+}

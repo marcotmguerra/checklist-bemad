@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Login | Check List - BEMAD</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/login.css" />
+
+  <!-- PWA (ativaremos depois) -->
+  <!-- <link rel="manifest" href="manifest.json"> -->
+
+</head>
+<body>
+
+  <main class="login-container">
+
+    <!-- Logo / Nome do Sistema -->
+    <section class="login-header">
+      <img src="assets/img/logo.png" alt="Logo Check List BEMAD" />
+      <h1>Check List - BEMAD</h1>
+      <p>Conferência de material de viatura</p>
+    </section>
+
+    <!-- Formulário de Login -->
+    <section class="login-form">
+      <form id="loginForm">
+
+        <div class="input-group">
+          <label for="email">Email</label>
+          <input 
+            type="email" 
+            id="email" 
+            name="email" 
+            placeholder="exemplo@email.com"
+            required
+          />
+        </div>
+
+        <div class="input-group">
+          <label for="password">Senha</label>
+          <input 
+            type="password" 
+            id="password" 
+            name="password" 
+            placeholder="Digite sua senha"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn-primary">
+          Entrar
+        </button>
+
+      </form>
+
+      <div class="login-footer">
+        <p>Não tem acesso?</p>
+        <a href="cadastro.html">Solicitar cadastro</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="assets/js/auth/login.js" defer></script>
+
+</body>
+</html>
+
+<script type="module" src="assets/js/auth/login.js"></script>

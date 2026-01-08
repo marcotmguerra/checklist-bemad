@@ -1,0 +1,77 @@
+/* HEADER ADMIN */
+.admin-header {
+  background: var(--cor-secundaria);
+  color: #fff;
+  padding: 12px 16px;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+/* MENU */
+.admin-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.admin-nav button {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.admin-nav button.active {
+  background: var(--cor-primaria);
+  border-color: var(--cor-primaria);
+}
+
+/* CONTEÚDO CENTRALIZADO */
+.admin-content {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* BLOCO ADMIN */
+.admin-section {
+  display: none;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+
+  width: 100%;
+  max-width: 700px; /* 🔑 limita largura */
+}
+
+.admin-section.active {
+  display: block;
+}
+
+/* FORMULÁRIOS */
+.admin-form {
+  display: grid;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.admin-form input,
+.admin-form select {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid var(--cor-borda);
+  font-size: 15px;
+}
+
+/* LISTAS */
+.admin-list article {
+  padding: 10px;
+  border-bottom: 1px solid var(--cor-borda);
+}

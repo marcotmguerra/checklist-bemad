@@ -1,0 +1,78 @@
+/* RESET BÁSICO */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* VARIÁVEIS */
+:root {
+  --cor-primaria: #b71c1c;      /* vermelho institucional */
+  --cor-secundaria: #263238;    /* cinza escuro */
+  --cor-fundo: #f4f6f8;
+  --cor-branco: #ffffff;
+  --cor-texto: #333;
+  --cor-borda: #ddd;
+}
+
+/* BASE */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+}
+
+h1, h2, h3 {
+  color: var(--cor-secundaria);
+}
+
+a {
+  text-decoration: none;
+  color: var(--cor-primaria);
+}
+
+/* BOTÕES */
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-weight: bold;
+}
+
+.btn-primary {
+  background-color: var(--cor-primaria);
+  color: #fff;
+}
+
+.btn-secondary {
+  background-color: var(--cor-secundaria);
+  color: #fff;
+}
+
+.btn-danger {
+  background-color: #d32f2f;
+  color: #fff;
+}
+
+.btn-logout {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+}
+
+/* HEADER PADRÃO */
+.app-header {
+  background-color: var(--cor-primaria);
+  color: #fff;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn-back {
+  background: none;
+  color: #fff;
+  font-size: 16px;
+}

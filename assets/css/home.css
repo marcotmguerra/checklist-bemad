@@ -1,0 +1,67 @@
+/* CONTAINER GERAL */
+.home-container {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+  z-index: 1;
+}
+
+/* BLOCO CENTRAL */
+.home-container > section,
+.viaturas-list {
+  width: 100%;
+  max-width: 520px;
+  position: relative;
+}
+
+/* TÍTULO */
+.home-title {
+  margin-bottom: 20px;
+  text-align: center;
+
+  /* 🔑 NÃO captura clique */
+  pointer-events: none;
+}
+
+.home-title h2,
+.home-title p {
+  pointer-events: none;
+}
+
+/* LISTA */
+.viaturas-list {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+
+  pointer-events: auto;
+}
+
+/* CARD */
+.viatura-card {
+  background: #fff;
+  padding: 18px;
+  border-radius: 10px;
+  border-left: 6px solid var(--cor-primaria);
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  position: relative;
+  z-index: 2;
+}
+
+/* BOTÃO — 🔥 FOCO TOTAL */
+.viatura-card button {
+  width: 100%;
+  font-size: 16px;
+  padding: 14px;
+
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
+}

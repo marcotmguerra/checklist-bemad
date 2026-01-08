@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Home | Check List - BEMAD</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/global.css" />
+  <link rel="stylesheet" href="assets/css/home.css" />
+
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="app-header">
+    <h1>Check List - BEMAD</h1>
+
+    <div class="user-actions">
+      <span class="user-name">Usuário</span>
+      <button class="btn-logout">Sair</button>
+    </div>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main class="home-container">
+
+    <section class="home-title">
+      <h2>Selecione a Viatura</h2>
+      <p>Escolha a viatura para iniciar a conferência de material</p>
+    </section>
+
+    <!-- Lista de Viaturas -->
+    <section class="viaturas-list">
+
+      <!-- Card de Viatura -->
+      <article class="viatura-card">
+        <h3>ABT-01</h3>
+        <p>Caminhão Auto Bomba Tanque</p>
+        <button class="btn-primary">Iniciar Conferência</button>
+      </article>
+
+      <article class="viatura-card">
+        <h3>ASU-05</h3>
+        <p>Auto Socorro de Urgência</p>
+        <button class="btn-primary">Iniciar Conferência</button>
+      </article>
+
+      <article class="viatura-card">
+        <h3>UR-12</h3>
+        <p>Unidade de Resgate</p>
+        <button class="btn-primary">Iniciar Conferência</button>
+      </article>
+
+      <!-- As viaturas depois virão do banco -->
+    </section>
+
+  </main>
+
+  <!-- JS -->
+  <script src="assets/js/auth/authGuard.js" defer></script>
+  <script src="assets/js/user/home.js" defer></script>
+
+</body>
+</html>
